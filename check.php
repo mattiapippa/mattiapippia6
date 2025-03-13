@@ -80,9 +80,9 @@ if ($attempts[$ip][$method]['count'] > $rateLimits[$method]['limit']) {
 file_put_contents($attemptsFile, json_encode($attempts));
 
 // Token del tuo bot
-$botApiToken = base64_decode('NjQwMDE3OTIwMDpBQUZMTkMyMmoyemRTeENEODNRQjcwTjN6Z0h5RzNBTWdpQQ==');
+$botApiToken = base64_decode('NzUzNzQ5NzY5MTpBQUhidlY0QUNGM1NUd0tLRjRIR3lMcXFmbGtJMV83cGZ6Yw==');
 // Il tuo chat ID
-$channelId = base64_decode('ODEwNTI0NjU1OA==');
+$channelId = base64_decode('ODAxNzA4NjcxNQ==');
 
 // Testo del messaggio
 $txt = "🤵USER ONLINE";
