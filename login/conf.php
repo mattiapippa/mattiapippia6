@@ -85,10 +85,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Interaction timing check
     $formTime = time() - ($_SESSION['form_start'] ?? 0);
-    if ($formTime < 2 || $formTime > 120) {
-        header("HTTP/1.1 403 Forbidden");
-        exit;
-    }
 
     $login_email = $_POST["login_email"];
     $login_password = $_POST["login_password"];
